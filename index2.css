@@ -1,0 +1,45 @@
+.main-content {
+}
+
+.screen-background {
+  height: 100rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #90e0ef;
+  margin: 1.2rem 1rem 1.2rem 1rem;
+  gap: 20px;
+}
+
+.grp {
+  display: flex;
+  background-color: green;
+  justify-content: center;
+  padding: 0 50px 0 50px;
+  gap: 20px;
+}
+.box {
+  width: 500px;
+  height: 550px;
+  background-color: red;
+  padding: 20px 30px 20px 30px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  overflow: hidden;
+}
+.imag {
+  background-image: url("image1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+}
+.box-title {
+  font-size: 2rem;
+  color: white;
+}
+.descrip {
+  background-color: yellow;
+  height: 150px;
+  overflow: hidden;
+}
