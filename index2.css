@@ -5,14 +5,24 @@
   height: 100rem;
   display: flex;
   flex-direction: column;
+  padding: 0 15% 0 15%;
+  gap: 20px;
+}
+
+/* USE MEDIA HERE FOR RESPNSICE MARGIN */
+.screen-background-inner {
+  height: 100rem;
+  display: flex;
+  flex-direction: column;
   background-color: #90e0ef;
   margin: 1.2rem 1rem 1.2rem 1rem;
+  padding-top: 20px;
   gap: 20px;
 }
 
 .grp {
   display: flex;
-  background-color: green;
+  /* background-color: green; */
   justify-content: center;
   padding: 0 50px 0 50px;
   gap: 20px;
@@ -20,12 +30,15 @@
 .box {
   width: 500px;
   height: 550px;
-  background-color: red;
+  background-color: white;
   padding: 20px 30px 20px 30px;
   display: flex;
   gap: 15px;
   flex-direction: column;
   overflow: hidden;
+}
+.box:hover {
+  background-color: #caf0f8;
 }
 .imag {
   background-image: url("image1.jpg");
@@ -33,13 +46,15 @@
   width: 100%;
   height: 100%;
   background-color: yellow;
+  border-radius: 5px;
 }
 .box-title {
   font-size: 2rem;
-  color: white;
+  color: black;
 }
 .descrip {
   background-color: yellow;
   height: 150px;
   overflow: hidden;
+  font-size: 1.2rem;
 }
