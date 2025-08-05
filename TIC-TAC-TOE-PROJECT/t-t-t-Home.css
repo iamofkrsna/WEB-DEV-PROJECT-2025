@@ -92,10 +92,17 @@ body {
   height: fit-content;
   padding-left: 1.5rem;
 }
+
+.warning {
+  display: none;
+  color: #ffb703;
+  letter-spacing: 2px;
+  padding: 0 25px 0 35px;
+}
 .player-x-next {
   color: white;
   font-size: 1.5rem;
-  padding: 5px 25px 5px 25px;
+  padding: 5px 25px 3px 25px;
   border-radius: 30px;
   background-color: #7b2cbf;
   border: none;
