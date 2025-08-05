@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.main-content {
+  height: 100%;
+  background-color: #8ecae6;
+
+  /* VISIBILITY */
+  display: flex;
+  justify-content: center;
+}
+
+.middle-screen {
+  text-align: center;
+  background-color: #219ebc;
+  color: black;
+  height: 100%;
+  width: 50%;
+  align-content: center;
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .middle-screen {
+    width: 60%;
+  }
+}
+@media (max-width: 1000px) {
+  .middle-screen {
+    width: 80%;
+  }
+}
+
+.game-title {
+  color: white;
+  font-size: 3.5rem;
+  margin-bottom: 5rem;
+  text-shadow: black 0px 0px 10px;
+}
+.platform {
+  /* background-color: yellow; */
+  height: 35rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.player-x {
+  background-color: #023e8a;
+  height: 100%;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1.3rem;
+  text-align: left;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+.x-detail {
+  font-size: 2rem;
+  color: white;
+  margin-top: 8rem;
+  margin-bottom: 1.5rem;
+  text-shadow: black 0px 0px 10px;
+}
+.player-x-input-area {
+  padding-left: 1.1rem;
+
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+.player-x-input {
+  font-size: 1.5rem;
+  width: fit-content;
+  display: block;
+  padding: 5px 5px 3px 25px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-shadow: 0 0 10px black;
+}
+.player-x-input:hover {
+  border: 3px solid orange;
+  border-right: none;
+}
+.player-x-next-area {
+  width: 100%;
+  height: fit-content;
+  padding-left: 1.5rem;
+}
+.player-x-next {
+  color: white;
+  font-size: 1.5rem;
+  padding: 5px 25px 5px 25px;
+  border-radius: 30px;
+  background-color: #7b2cbf;
+  border: none;
+  box-shadow: 0 0 10px black;
+}
+.player-x-next:hover {
+  border: 3px solid orange;
+  cursor: pointer;
+}
+
+/* LOADING ANIMATION */
+.loading-full-screen {
+  display: none;
+  position: relative;
+  bottom: 100%;
+  background-color: black;
+  opacity: 60%;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.loading-animation {
+  width: 120px;
+  speed: "3";
+  src: "/HOME-PAGE-FILES/ANIMATIONS/Loader.lottie";
+}

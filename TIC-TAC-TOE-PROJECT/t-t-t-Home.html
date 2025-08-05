@@ -3,7 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Play TIC-TAC-TOE</title>
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="t-t-t-Home.css" />
+    <script
+      src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js"
+      type="module"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <main class="main-content">
+      <div class="middle-screen">
+        <div class="middle-screen-centre">
+          <div class="game-title">TIC TAC TOE</div>
+          <div class="platform">
+            <div class="player-x">
+              <div class="x-detail">PLAYER-X DETAILS</div>
+              <div class="player-x-input-area">
+                <input
+                  type="text"
+                  placeholder="Enter Player-X Name"
+                  class="player-x-input"
+                  id="x-input"
+                />
+              </div>
+              <div class="player-x-next-area">
+                <button class="player-x-next">Next</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- LOADING ANIMATION -->
+    <div class="loading-full-screen">
+      <dotlottie-wc
+        src="/HOME-PAGE-FILES/ANIMATIONS/Loader.lottie"
+        class="loading-animation"
+        speed="1.5"
+        autoplay
+        loop
+      ></dotlottie-wc>
+    </div>
+  </body>
 </html>
