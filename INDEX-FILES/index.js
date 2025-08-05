@@ -1,16 +1,22 @@
 //PART 1 STARTs
-//LINKS FOR BOX CLICK
 
+//LINK TO OPEN FOR EVERY BOX
 let boxesLinks = [
   "TIC-TAC-TOE-PROJECT/t-t-t-Home.html", //Link for box 0 and so on
   "https://www.youtube.com/",
   "www.haribol.com",
 ];
 
+//
+
 let boxes = document.querySelectorAll(".box");
+let boxImage = document.querySelectorAll(".box1-img");
 
 for (let i = 0; i < boxes.length; i++) {
-  console.log(i);
+  boxImage[
+    i
+  ].style.backgroundImage = `url('/HOME-PAGE-FILES//IMAGES/box-${i}-image.jpg`;
+  //Adding Links to Each Boxes
   boxes[i].addEventListener("click", () => {
     window.open(boxesLinks[i]);
   });
