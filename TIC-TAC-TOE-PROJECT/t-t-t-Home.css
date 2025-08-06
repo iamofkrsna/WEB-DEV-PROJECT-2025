@@ -6,6 +6,7 @@
 html,
 body {
   height: 100%;
+  user-select: none;
 }
 .main-content {
   height: 100%;
@@ -52,6 +53,7 @@ body {
   background-color: #023e8a;
   height: 100%;
   width: 30rem;
+  /* CHANGE FROM HERE */
   display: flex;
   flex-direction: column;
   padding: 2rem;
@@ -69,7 +71,6 @@ body {
 }
 .player-x-input-area {
   padding-left: 1.1rem;
-
   width: 100%;
   display: flex;
   justify-content: left;
@@ -93,7 +94,7 @@ body {
   padding-left: 1.5rem;
 }
 
-.warning {
+.warning-x {
   display: none;
   color: #ffb703;
   letter-spacing: 2px;
@@ -129,4 +130,89 @@ body {
   width: 120px;
   speed: "3";
   src: "/HOME-PAGE-FILES/ANIMATIONS/Loader.lottie";
+}
+
+/* PLAYER O BOX */
+.player-o {
+  background-color: #fb6f92;
+  height: 100%;
+  width: 30rem;
+  display: none;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1.3rem;
+  text-align: left;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.o-detail {
+  font-size: 2rem;
+  color: white;
+  margin-top: 8rem;
+  margin-bottom: 1.5rem;
+  text-shadow: black 0px 0px 10px;
+}
+.player-o-input-area {
+  padding-left: 1.1rem;
+
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+.player-o-input {
+  font-size: 1.5rem;
+  width: fit-content;
+  display: block;
+  padding: 5px 5px 3px 25px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-shadow: 0 0 10px black;
+}
+.player-o-input:hover {
+  border: 3px solid orange;
+  border-right: none;
+}
+.player-o-next-area {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  padding-left: 1.5rem;
+  padding-right: 4rem;
+  text-align: right;
+}
+
+.player-o-next {
+  color: white;
+  font-size: 1.5rem;
+  padding: 5px 25px 3px 25px;
+  border-radius: 30px;
+  background-color: #7b2cbf;
+  border: none;
+  box-shadow: 0 0 10px black;
+}
+.player-o-next:hover {
+  border: 3px solid orange;
+  cursor: pointer;
+}
+.warning-o {
+  display: none;
+  color: white;
+  letter-spacing: 2px;
+  padding: 0 25px 0 35px;
+}
+.btn-gap {
+  width: 100%;
+}
+.player-o-back {
+  background-color: #4a5759;
+  color: white;
+  font-size: 1.5rem;
+  padding: 5px 25px 3px 25px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 0 10px black;
+}
+.player-o-back:hover {
+  border: 3px solid orange;
+  cursor: pointer;
 }

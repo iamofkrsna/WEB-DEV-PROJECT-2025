@@ -6,6 +6,7 @@
 
 body {
   background-color: #e3f2fd;
+  user-select: none;
 }
 /* HEADER -> NAVBAR */
 .nav-bar {

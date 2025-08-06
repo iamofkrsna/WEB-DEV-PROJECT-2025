@@ -1,3 +1,6 @@
+//DISABLING THE RIGHT CLICK
+document.addEventListener("contextmenu", (event) => event.preventDefault());
+
 //PART 1 STARTs
 
 //LINK TO OPEN FOR EVERY BOX

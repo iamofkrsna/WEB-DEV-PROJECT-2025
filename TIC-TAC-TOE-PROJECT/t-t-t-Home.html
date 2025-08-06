@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TIC TAC TOE</title>
     <link rel="stylesheet" href="t-t-t-Home.css" />
+    <link rel="stylesheet" href="t-t-t-Home2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script
       src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js"
       type="module"
@@ -26,11 +34,29 @@
                   id="x-input"
                 />
               </div>
-              <div class="warning">This is a Warning</div>
+              <div class="warning-x">This is a Warning</div>
               <div class="player-x-next-area">
                 <button class="player-x-next">Next</button>
               </div>
             </div>
+            <div class="player-o">
+              <div class="o-detail">PLAYER-O DETAILS</div>
+              <div class="player-o-input-area">
+                <input
+                  type="text"
+                  placeholder="Enter Player-O Name*"
+                  class="player-o-input"
+                  id="o-input"
+                />
+              </div>
+              <div class="warning-o">This is a Warning</div>
+              <div class="player-o-next-area">
+                <button class="player-o-back">Back</button>
+                <div class="btn-gap"></div>
+                <button class="player-o-next">Next</button>
+              </div>
+            </div>
+            <div class="game-window"></div>
           </div>
         </div>
       </div>
@@ -47,5 +73,6 @@
       ></dotlottie-wc>
     </div>
   </body>
-  <script src="t-t-t-Home.js"></script>
+  <script type="module" src="t-t-t-Home.js"></script>
+  <script type="module" src="gameLogic.js"></script>
 </html>
