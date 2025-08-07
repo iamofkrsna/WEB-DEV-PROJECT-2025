@@ -14,6 +14,8 @@ let warningO = document.querySelector(".warning-o");
 let backBtnO = document.querySelector(".player-o-back");
 let nameO = playerOName.value.trim();
 //
+
+let gameWindow = document.querySelector(".game-window");
 let mainContent = document.querySelector(".main-content");
 let loadingAnimation = document.querySelector(".loading-full-screen");
 
@@ -111,7 +113,7 @@ nextBtnO.addEventListener("click", () => {
       loadingAnimation.style.display = "none";
       //Loading the GAME Window
       playerOWindow.style.display = "none";
-      //Game window opening code goes here
+      gameWindow.style.display = "flex";
       console.log(`Player X Name: ${nameX}\n Player O Name: ${nameO}`);
     }, Math.random() * (2000 - 700) + 700);
   }

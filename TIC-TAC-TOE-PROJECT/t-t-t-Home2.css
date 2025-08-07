@@ -1,10 +1,25 @@
 .game-window {
-  background-color: #023e8a;
+  background-image: url("/TIC-TAC-TOE-PROJECT/images/play-ground.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-color: #023e8a; */
+  border: 5px solid #3c096c;
+  border-radius: 10px;
+  padding: 2rem;
+
   height: 100%;
   width: 30rem;
-  display: none;
-  flex-direction: column;
-  padding: 2rem;
-  gap: 1.3rem;
-  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.res-btn {
+  color: #70e000;
+  /* #ffd60a */
+  font-size: 6rem;
+  background-color: transparent;
+  width: 135px;
+  height: 28%;
+  border: none;
 }
