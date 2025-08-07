@@ -42,6 +42,7 @@ body {
   margin-bottom: 5rem;
   text-shadow: black 0px 0px 10px;
 }
+
 .platform {
   /* background-color: yellow; */
   height: 35rem;
@@ -55,7 +56,7 @@ body {
   height: 100%;
   width: 30rem;
   /* CHANGE FROM HERE */
-  display: none;
+  display: flex;
   flex-direction: column;
   padding: 2rem;
   gap: 1.3rem;
@@ -123,8 +124,7 @@ body {
   display: none;
   position: relative;
   bottom: 100%;
-  background-color: black;
-  opacity: 60%;
+  background-color: rgba(0, 0, 0, 0.6);
   height: 100%;
   width: 100%;
   justify-content: center;

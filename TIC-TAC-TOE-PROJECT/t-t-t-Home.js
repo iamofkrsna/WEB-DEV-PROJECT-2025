@@ -16,6 +16,8 @@ let nameO = playerOName.value.trim();
 //
 
 let gameWindow = document.querySelector(".game-window");
+let scoreWindow = document.querySelector(".score-window");
+let controlWindow = document.querySelector(".controls-window");
 let mainContent = document.querySelector(".main-content");
 let loadingAnimation = document.querySelector(".loading-full-screen");
 
@@ -90,7 +92,10 @@ playerOName.addEventListener("keypress", (pressedKey) => {
         loadingAnimation.style.display = "none";
         //Loading the GAME Window
         playerOWindow.style.display = "none";
-        //Game window opening code goes here
+        gameWindow.style.display = "flex";
+        scoreWindow.style.display = "block";
+        controlWindow.style.display = "block";
+        settingNames();
         console.log(`Player X Name: ${nameX}\n Player O Name: ${nameO}`);
       }, Math.random() * (2000 - 700) + 700);
     }
@@ -114,11 +119,13 @@ nextBtnO.addEventListener("click", () => {
       //Loading the GAME Window
       playerOWindow.style.display = "none";
       gameWindow.style.display = "flex";
+      scoreWindow.style.display = "block";
+      controlWindow.style.display = "block";
+      settingNames();
       console.log(`Player X Name: ${nameX}\n Player O Name: ${nameO}`);
     }, Math.random() * (2000 - 700) + 700);
   }
 });
-
 backBtnO.addEventListener("click", () => {
   loadingAnimation.style.display = "flex";
   setTimeout(() => {
@@ -128,6 +135,9 @@ backBtnO.addEventListener("click", () => {
   }, Math.random() * (2000 - 700) + 700);
 });
 
-//Exporting PlayerX name and PlayerO name to gameLogic.js
-export let playerX = nameX,
-  playerO = nameO;
+function settingNames() {
+  let scoreXname = document.querySelector(".score-name-x");
+  let scoreOname = document.querySelector(".score-name-o");
+  scoreXname.innerText = "X-" + nameX + ":";
+  scoreOname.innerText = "O-" + nameO + ":";
+}
