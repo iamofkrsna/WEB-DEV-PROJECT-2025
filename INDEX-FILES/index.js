@@ -5,9 +5,7 @@ document.addEventListener("contextmenu", (event) => event.preventDefault());
 
 //LINK TO OPEN FOR EVERY BOX
 let boxesLinks = [
-  "TIC-TAC-TOE-PROJECT/t-t-t-Home.html", //Link for box 0 and so on
-  "https://www.youtube.com/",
-  "www.haribol.com",
+  "https://github.com/iamofkrsna/TIC-TAC-TOE-PROJECT-2025.git", //Link for box 0 and so on
 ];
 
 //
