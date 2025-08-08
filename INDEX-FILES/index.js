@@ -15,13 +15,14 @@ let boxesLinks = [
 let boxes = document.querySelectorAll(".box");
 let boxImage = document.querySelectorAll(".box1-img");
 
+let openedWindow;
 for (let i = 0; i < boxes.length; i++) {
   boxImage[
     i
   ].style.backgroundImage = `url('/HOME-PAGE-FILES//IMAGES/box-${i}-image.jpg`;
   //Adding Links to Each Boxes
   boxes[i].addEventListener("click", () => {
-    window.open(boxesLinks[i]);
+    openedWindow = window.open(boxesLinks[i]);
   });
 }
 

@@ -131,7 +131,14 @@
   font-size: 2.7rem;
   color: white;
 }
+.winner-name {
+  font-size: 5rem;
+  color: white;
+  position: relative;
+  bottom: 6rem;
+}
 .menu {
+  background-color: rgba(0, 119, 182, 0.6);
   display: flex;
   justify-content: center;
   text-align: center;

@@ -5,6 +5,7 @@ let menu = document.querySelector(".game-menu");
 let xScore = document.querySelector(".score-num-x");
 let oScore = document.querySelector(".score-num-o");
 let dScore = document.querySelector(".score-num-d");
+let winnerName = document.querySelector(".winner-name");
 let xWins = 0;
 let oWins = 0;
 let draws = 0;
@@ -41,13 +42,6 @@ for (let box of boxes) {
     let winP = checkWinner();
     if (winP.length != 0) {
       //There is a Winner
-
-      //WHO IS THE WINNER
-      if (boxes[winP[0]].innerText === "X") {
-        xScore.innerText = `${++xWins} Wins`;
-      } else {
-        oScore.innerText = `${++oWins} Wins`;
-      }
       for (let num of winP) {
         boxes[num].style.backgroundColor = "#3c096c";
         for (let box of boxes) {
@@ -57,11 +51,22 @@ for (let box of boxes) {
       //OPEN GAME MENU
       setTimeout(() => {
         menu.style.display = "flex";
+        //WHO IS THE WINNER
+        if (boxes[winP[0]].innerText === "X") {
+          xScore.innerText = `${++xWins} Wins`;
+          winnerName.innerText = "X WON!! :)";
+          winnerName.style.color = "#70e000";
+        } else {
+          oScore.innerText = `${++oWins} Wins`;
+          winnerName.innerText = "O WON!! :)";
+          winnerName.style.color = "#ffd60a";
+        }
       }, Math.random() * (1000 - 700) + 700);
     } else {
       if (draw()) {
         dScore.innerText = `${++draws} `;
-        console.log("It's Draw");
+        winnerName.innerText = "DRAW!! :(";
+        winnerName.style.color = "white";
         //OPEN MENU
         setTimeout(() => {
           menu.style.display = "flex";
@@ -115,3 +120,26 @@ let checkWinner = () => {
 
 /* #ffd60a  -> O */
 /* #70e000  -> X */
+
+//HOME-BTN=CLICKED
+
+let home = document.querySelector(".home");
+let playAgain = document.querySelector(".play-again");
+
+playAgain.addEventListener("click", () => {
+  setTimeout(() => {
+    menu.style.display = "none";
+    for (let box of boxes) {
+      box.style.backgroundColor = "transparent";
+      box.innerText = "";
+      chanceX = true;
+      box.disabled = false;
+    }
+  }, 50);
+});
+
+home.addEventListener("click", () => {
+  setTimeout(() => {
+    window.location.reload();
+  }, 50);
+});
